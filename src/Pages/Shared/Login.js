@@ -31,7 +31,6 @@ const Login = () => {
 
     // let signInError;
 
-
     // if (error || gError) {
     //     signInError = <p className='text-red-500'><small>{error?.message || gError?.message}</small></p>
     // }
@@ -58,7 +57,7 @@ const Login = () => {
         console.log("...");
     }
     return (
-        <div className='flex h-screen items-center justify-center bg-base-100 mt-5 mb-12'>
+        <div className='flex align-center justify-center bg-base-100 m-5 mb-12'>
             <div className="card w-11/12 lg:w-1/4 shadow-xl">
                 <div className="card-body bg-gradient-to-r from-yellow-100 to-fuchsia-200">
                     <h2 className="text-center text-xl mx:text-2xl lg:text-3xl font-bold text-blue-700">Login</h2>

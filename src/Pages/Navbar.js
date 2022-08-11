@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
         <div class="navbar-end gap-1">
           <Link className='border-2 rounded-full p-1 bg-gradient-to-r from-yellow-100 to-fuchsia-200' to="login">Log In</Link>
-          <Link className='border-2 rounded-full p-1 bg-gradient-to-r from-yellow-100 to-fuchsia-200' to="signout">Sign Out</Link>
+          <Link className='border-2 rounded-full p-1 bg-gradient-to-r from-yellow-100 to-fuchsia-200' to="signUp">Sign Up</Link>
          
         </div>
       </div>
