@@ -26,8 +26,8 @@ const Navbar = () => {
         </div>
         <div class="navbar-center hidden lg:flex" tabIndex="0">
           <ul class="menu menu-horizontal p-0" tabIndex="0">
-            <li><a>Item 1</a></li>
-            <li><a>Item 3</a></li>
+            <li className='text-2xl hover:animate-bounce'>product</li>
+            <li className='text-2xl hover:animate-bounce mx-4'>Contact</li>
           </ul>
         </div>
         <div class="navbar-end gap-1">
