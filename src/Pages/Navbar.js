@@ -14,34 +14,26 @@ const Navbar = () => {
               <li><a>Item 1</a></li>
               <li tabindex="0">
                 <a class="justify-between">
-                  Parent
+                  Item 2
                   <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
                 </a>
               </li>
-              <li><a>Home</a></li>
+              <li><a>Item 11</a></li>
+              
             </ul>
           </div>
-        <li className="btn btn-ghost normal-case text-xl">
-            <Link to="/">daisyUI</Link></li>
+            <Link className='text-3xl' to="/">EsHop</Link>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal p-0">
+        <div class="navbar-center hidden lg:flex" tabIndex="0">
+          <ul class="menu menu-horizontal p-0" tabIndex="0">
             <li><a>Item 1</a></li>
-            <li tabindex="0">
-              <a>
-                Parent
-                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-              </a>
-              <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </li>
             <li><a>Item 3</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <li className='btn'><Link to="login">Log In</Link></li>
+        <div class="navbar-end gap-1">
+          <Link className='border-2 rounded-full p-1 bg-gradient-to-r from-yellow-100 to-fuchsia-200' to="login">Log In</Link>
+          <Link className='border-2 rounded-full p-1 bg-gradient-to-r from-yellow-100 to-fuchsia-200' to="signout">Sign Out</Link>
+         
         </div>
       </div>
     );
