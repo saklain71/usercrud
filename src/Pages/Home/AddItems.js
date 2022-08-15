@@ -1,28 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 
 
 const AddItems = () => {
-    const [items, setItems] = useState();
+   // const [items, setItems] = useState();
     //  const [user] = useAuthState(auth);
 
-    useEffect(() => {
-        fetch('http://localhost:5000/products/items')
-            .then(res => res.json())
-            .then(data => setItems(data))
-    }, [items])
+    // useEffect(() => {
+    //     fetch('http://localhost:5000/products')
+    //         .then(res => res.json())
+    //         .then(data => setItems(data))
+    // }, [items])
 
     // from react hook form
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (data, e) => {
-        const total = { ...data, delivery: 0 };
+        const total = { ...data };
         console.log(total);
         e.target.reset();
 
-        const url = 'http://localhost:5000/products';
+        const url = 'http://localhost:5000/item';
         fetch(url, {
             method: 'POST',
             headers: {
