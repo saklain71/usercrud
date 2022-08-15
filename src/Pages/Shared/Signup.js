@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
 
@@ -91,6 +92,7 @@ const Signup = () => {
                         
                         <input className='btn w-full max-w-xs' type="submit" value="Sign Up" />
                     </form>
+                    <p className='text-center'><small>Already Signed Up? </small><Link className='text-blue-500' to="/login">Please Log In</Link></p>
                 </div>
             </div>
         </div>

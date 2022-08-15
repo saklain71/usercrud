@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div id="contact" className={` my-12 `}>
+       
         <div
           style={{
             background: `url(https://neilpatel.com/wp-content/uploads/2015/04/ecommerce.jpg) `,
@@ -34,7 +34,6 @@ const Contact = () => {
             <button className="btn bg-gradient-to-r from-yellow-100 to-fuchsia-200 capitalize text-black">Contact Submit</button>
           </div>
         </div>
-      </div>
     );
   };
 

@@ -10,7 +10,7 @@ const Banner = () => {
             <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md">
                     <h1 class="mb-5 text-5xl font-bold ">Welcome to <br /> <span className='text-info'>EsHop House</span></h1>
-                    <button class="btn btn-info">Let's Explore More ...</button>
+                    <button class="btn bg-gradient-to-r from-yellow-100 to-fuchsia-200 text-black">Let's Explore More ...</button>
                 </div>
             </div>
         </div>

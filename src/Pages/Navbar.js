@@ -20,14 +20,14 @@ const Navbar = () => {
       </div>
       <div class="navbar-center hidden lg:flex" tabIndex="0">
         <ul class="menu menu-horizontal p-0" tabIndex="0">
-          <li className='text-2xl hover:animate-bounce'>product</li>
-          <li className='text-2xl hover:animate-bounce mx-4'>Contact</li>
+        <li className='text-2xl hover:animate-bounce'><Link to="products"> Product </Link></li>
+        <li className='text-xl hover:animate-bounce'><Link to="about"> About Us </Link></li>
+        <li className='text-xl hover:animate-bounce'><Link to="additem"> Add Item </Link></li>
         </ul>
       </div>
       <div class="navbar-end gap-1">
         <Link className='border-2 text-xl btn p-1 ' to="login">Log In</Link>
-        <Link className='border-2 text-xl btn p-1 ' to="signUp">Sign Up</Link>
-
+        {/* <Link className='border-2 text-xl btn p-1 ' to="signUp">Sign Up</Link> */}
       </div>
     </div>
   );
