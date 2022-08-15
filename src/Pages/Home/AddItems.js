@@ -42,18 +42,18 @@ const AddItems = () => {
 
 
         <div className='flex align-center justify-center bg-base-100 m-5'>
-            <div className="card w-full lg:w-1/3 shadow-xl">
+            <div className="card w-full lg:w-1/4 shadow-xl">
                 <div className="card-body bg-gradient-to-r from-yellow-100 to-fuchsia-200">
                     <h1 className='text-info text-center mb-8'>Add New Item</h1>
-                    <form className=' Aform-control  max-w-xs' onSubmit={handleSubmit(onSubmit)}>
+                    <form className=' Aform-control  max-w-xs ' onSubmit={handleSubmit(onSubmit)}>
                         {/* <input className='mb-2 p-2' placeholder='Name' name='email' value={user?.email}  type="text" {...register("email")}/> */}
-                        <input className='input input-bordered w-full max-w-xs"' placeholder='item: name' type="text" {...register("name", { required: true })} />
-                        <input className='input input-bordered w-full max-w-xs' placeholder=' description' type="text" {...register("description", { required: true })} />
-                        <input className='input input-bordered w-full max-w-xs' placeholder=' price' type="number" {...register("price")} />
-                        <input className='input input-bordered w-full max-w-xs' placeholder=' availableQuantity' type="number" {...register("price")} />
-                        <input className='input input-bordered w-full max-w-xs' placeholder='Email' type="text" {...register("email", { required: true })} />
-                        <input className='input input-bordered w-full max-w-xs' placeholder='photo url' type="text" {...register("img", { required: true })} />
-                        <input className='btn btn-info w-full max-w-xs mt-8 ' type="submit" value="Add Items" />
+                        <input className='input input-bordered w-full max-w-xs mb-2' placeholder='item: name' type="text" {...register("name", { required: true })} />
+                        <input className='input input-bordered w-full max-w-xs mb-2' placeholder=' description' type="text" {...register("description", { required: true })} />
+                        <input className='input input-bordered w-full max-w-xs mb-2' placeholder=' price' type="number" {...register("price")} />
+                        <input className='input input-bordered w-full max-w-xs mb-2' placeholder=' availableQuantity' type="number" {...register("price")} />
+                        <input className='input input-bordered w-full max-w-xs mb-2' placeholder='Email' type="text" {...register("email", { required: true })} />
+                        <input className='input input-bordered w-full max-w-xs mb-2' placeholder='photo url' type="text" {...register("img", { required: true })} />
+                        <input className='btn btn-info w-full max-w-xs mt-8 mb-2' type="submit" value="Add Items" />
                     </form>
 
                 </div>

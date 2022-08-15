@@ -9,6 +9,7 @@ import Products from './Pages/Products/Products';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import AddItems from './Pages/Home/AddItems';
+import Update from './Pages/Products/Update';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="signUp" element={<Signup></Signup>}></Route>
         <Route path="login" element={<Login></Login>}></Route>
         <Route path="additem" element={<AddItems></AddItems>}></Route>
+        <Route path="/update/:id" element={<Update></Update>}></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer></ToastContainer>

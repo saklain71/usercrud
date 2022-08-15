@@ -1,12 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
 import { toast } from 'react-toastify';
-//import { useNavigate } from 'react-router';
 
 const ProductsDetails = ({productss , children}) => {
     const {img,name, description, availableQuantity, price} = productss;
    // const navigate = useNavigate();
    const navigate = useNavigate();
+   const updateButton =(id) =>{
+    navigate(`/update/${id}`)
+   }
 
    const deleteButton = (id) =>{
 
@@ -31,7 +33,7 @@ const ProductsDetails = ({productss , children}) => {
             <p><b>price:</b> {price}</p>
             <div className='grid grid-cols-2 gap-10'>
                 <button onClick={() => deleteButton(productss._id)} className='btn'>Delete</button>
-                <button className='btn'>Update</button>
+                <button onClick={()=> updateButton(productss._id)} className='btn'>Update</button>
             </div>
         </div>
        </div>
